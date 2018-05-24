@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+{% block title %}SYSUfm - 上传人脸图片{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+    <h1>更换你的头像</h1>
+</div>
+<div class="col-md-4">
+    <form action="/edit-avatar" method=post enctype=multipart/form-data>
+        <input type=file name=file><br/>
+        <input type=submit value=Upload>
+    </form>
+</div>
+
+{% endblock %}
+</body>
+</html>
